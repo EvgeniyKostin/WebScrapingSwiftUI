@@ -11,6 +11,7 @@
 		FE5DB57C2BE69D1D00D09B6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5DB57B2BE69D1D00D09B6F /* ContentView.swift */; };
 		FE5DB57E2BE69D1F00D09B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5DB57D2BE69D1F00D09B6F /* Assets.xcassets */; };
 		FE5DB5822BE69D1F00D09B6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5DB5812BE69D1F00D09B6F /* Preview Assets.xcassets */; };
+		FE5DB58A2BE69DF800D09B6F /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = FE5DB5892BE69DF800D09B6F /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5DB58A2BE69DF800D09B6F /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = WebScrapingSwiftUI;
+			packageProductDependencies = (
+				FE5DB5892BE69DF800D09B6F /* SwiftSoup */,
+			);
 			productName = WebScrapingSwiftUI;
 			productReference = FE5DB5762BE69D1D00D09B6F /* WebScrapingSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = FE5DB56D2BE69D1D00D09B6F;
+			packageReferences = (
+				FE5DB5882BE69DF800D09B6F /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = FE5DB5772BE69D1D00D09B6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -359,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE5DB5882BE69DF800D09B6F /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE5DB5892BE69DF800D09B6F /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE5DB5882BE69DF800D09B6F /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE5DB56E2BE69D1D00D09B6F /* Project object */;
 }
